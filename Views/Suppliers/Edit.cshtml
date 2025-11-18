@@ -1,0 +1,19 @@
+@model WebApplication1.Models.Supplier
+
+<h2>Edit Supplier</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Phone</label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary">Update</button>
+</form>

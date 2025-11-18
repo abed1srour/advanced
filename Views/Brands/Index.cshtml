@@ -1,0 +1,26 @@
+@model IEnumerable<WebApplication1.Models.Brand>
+
+<h2>Brands</h2>
+
+<a class="btn btn-primary" href="/Brands/Create">Add Brand</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>
+                    <a class="btn btn-warning" href="/Brands/Edit/@item.Id">Edit</a>
+                    <a class="btn btn-danger" href="/Brands/Delete/@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+@model WebApplication1.Models.Brand
+
+<h2>Edit Brand</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary">Update</button>
+</form>

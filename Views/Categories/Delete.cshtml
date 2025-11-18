@@ -1,0 +1,9 @@
+@model WebApplication1.Models.Category
+
+<h2>Delete Category</h2>
+<p>Are you sure you want to delete @Model.Name?</p>
+
+<form method="post">
+    <button class="btn btn-danger">Delete</button>
+    <a class="btn btn-secondary" href="/Categories">Cancel</a>
+</form>
